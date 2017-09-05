@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbarColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/actionbarColor"
+            android:elevation="10dp"
+            android:minHeight="?attr/actionBarSize"
+            app1:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/toolbar_logo" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_below="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            tools:context="com.example.s521573.money_saver.ManagementActivity">
+
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/month_layout"
+                android:layout_height="180dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/august_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/basic_padding">
+
+                <TextView
+                    android:id="@+id/month_text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="330dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_month_label_size"
+                    tools:text="A U G U S T" />
+
+                <TextView
+                    android:id="@+id/total_text"
+                    android:layout_height="60dp"
+                    android:layout_width="200dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/total_box"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="@string/total_label"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/available_balance_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_below="@+id/month_layout"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:contentDescription="@string/price_description"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:src="@drawable/priority_button" />
+
+                <ImageView
+                    android:contentDescription="@string/item_description"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:src="@drawable/item_button" />
+
+                <ImageView
+                    android:contentDescription="@string/price_description"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:src="@drawable/price_button" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_below="@+id/category_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/basic_margin"
+                android:clickable="true"
+                android:scrollbars="vertical" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:clickable="true"
+                android:id="@+id/fab"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_width="wrap_content"
+                android:src="@drawable/add_icon"
+                app1:backgroundTint="@color/fab_background_color"
+                app1:fabSize="normal" />
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity = "start"
+            android:background="@color/navigationBackground"
+            app1:itemTextColor="@color/white"
+            app1:itemBackground="@drawable/drawer_item_background"
+            android:theme="@style/NavigationItem"
+            app1:headerLayout="@layout/drawer_header"
+            app1:menu="@menu/navigation_menu">
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

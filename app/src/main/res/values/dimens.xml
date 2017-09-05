@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="basic_margin">20dp</dimen>
+    <dimen name="basic_padding">16dp</dimen>
+    <dimen name="label_padding">18dp</dimen>
+    <dimen name="navigation_item_padding">110dp</dimen>
+    <dimen name="date_label_size">12sp</dimen>
+    <dimen name="price_label_size">15sp</dimen>
+    <dimen name="item_label_size">17sp</dimen>
+
+    <dimen name="main_month_label_size">20sp</dimen>
+    <dimen name="available_balance_text_size">18sp</dimen>
+
+
+</resources>

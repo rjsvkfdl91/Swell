@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#9E9E9E</color>
+
+    <color name="fab_background_color">#FFA500</color>
+    <color name="edit_background_color">#FF5252</color>
+
+    <color name="actionbarColor">#414141</color>
+
+    <color name="highestImportance">#C62828</color>
+    <color name="middleImportance">#81C784</color>
+    <color name="lowestImportance">#FFCC80</color>
+
+    <color name="itemSelectedColor">#9CCC65</color>
+    <color name="navigationBackground">#B3000000</color>
+
+</resources>

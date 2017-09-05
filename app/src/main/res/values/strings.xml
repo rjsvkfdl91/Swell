@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">$WELL</string>
+    <string name="deleteAll">Delete All</string>
+    <string name="delete">Delete</string>
+    <string name="caution">Are you sure?</string>
+    <string name="warning">Warning</string>
+
+    <string name="addItem">ADD ITEM</string>
+    <string name="editItem">EDIT ITEM</string>
+    <string name="nameOfItem">ITEM</string>
+    <string name="priceOfItem">PRICE</string>
+    <string name="priorityOfItem">PRIORITY</string>
+
+    <string name="high_level_label">1 - HIGH</string>
+    <string name="middle_level_label">2 - MIDDLE</string>
+    <string name="low_level_label">3 - LOW</string>
+
+    <string name="navigation_all_label">ALL</string>
+    <string name="navigation_high_level_label">HIGH</string>
+    <string name="navigation_middle_level_label">MIDDLE</string>
+    <string name="navigation_low_level_label">LOW</string>
+
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="unsaved_changes_dialog">Do you really want to discard your changes?</string>
+    <string name="delete_all_dialog">Do you really want to delete all items?</string>
+    <string name="delete_item_dialog">Do you really want to delete this item?</string>
+    <string name="discard">Discard</string>
+    <string name="no_label">No</string>
+    <string name="keep_editing">Keep Editing</string>
+
+    <string name="main_start_btn">START</string>
+    <string name="main_logo">Main_Logo</string>
+
+    <string name="total_label">TOTAL</string>
+
+    <string name="item_description">Item</string>
+    <string name="price_description">Price</string>
+    <string name="aboutSwell">About Swell</string>
+
+    <string name="developer_name">Developer : Gunhee Lee</string>
+    <string name="developer_email">rjsvkfdl91@gmail.com</string>
+    <string name="designer_name">Designer : Sujung Yun</string>
+    <string name="designer_email">Sujjung1004@gmail.com</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="description_swell">is a budget planner with priority of items and simple design to catch eyes. App Swell lets you save money by giving information about the most or least priority you need to spend. This features help to think your spending habit.</string>
+</resources>

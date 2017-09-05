@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context="com.example.s521573.money_saver.MainActivity"
+    android:padding="@dimen/basic_padding"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/main_logo"
+        android:contentDescription="@string/main_logo"/>
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/main_start_btn"
+        android:layout_below="@+id/main_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/main_start_btn"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="3000"
+        app:sub_btn_line_color="@color/black"
+        app:sub_btn_ripple_color="@color/white"
+        app:sub_btn_tick_color="@color/white" />
+</RelativeLayout>

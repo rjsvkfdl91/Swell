@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.s521573.money_saver">
+
+    <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/swell_launcher_icon"
+        android:fullBackupContent="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MainAppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ManagementActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ManagementEditorActivity"
+            android:parentActivityName=".ManagementActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ManagementActivity" />
+        </activity>
+        <activity
+            android:name=".AboutSwellActivity"
+            android:parentActivityName=".ManagementActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ManagementActivity" />
+        </activity>
+        <provider
+            android:name=".data.SaverProvider"
+            android:authorities="com.example.s521573.money_saver"
+            android:exported="false" />
+    </application>
+
+</manifest>

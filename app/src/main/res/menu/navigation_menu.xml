@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_all"
+            android:checked="true"
+            android:title="@string/navigation_all_label"/>
+
+        <item
+            android:id="@+id/navigation_item_high"
+            android:title="@string/navigation_high_level_label"/>
+
+        <item
+            android:id="@+id/navigation_item_middle"
+            android:title="@string/navigation_middle_level_label"/>
+
+        <item
+            android:id="@+id/navigation_item_low"
+            android:title="@string/navigation_low_level_label"/>
+    </group>
+
+</menu>
