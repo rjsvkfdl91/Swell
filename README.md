@@ -1,7 +1,7 @@
 # Swell
 
 
-##Lincense
+#Lincense
 
 The MIT License (MIT)
 
