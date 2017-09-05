@@ -10,9 +10,6 @@
   These features help to think your spending habit by keeping track of expenditure. 
   Total on the main screen shows the total amount of all the items automatically when you add item. 
 
-# Screenshots
-
-
 
 # License
 
