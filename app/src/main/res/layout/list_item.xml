@@ -50,14 +50,6 @@
             android:textSize="@dimen/date_label_size"
             tools:text = "2015-06-05"/>
 
-        <ImageButton
-            android:id="@+id/deleteButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:src="@drawable/action_delete"
-            android:backgroundTint="@color/gray"
-            android:contentDescription="@string/delete"/>
     </LinearLayout>
 
     <LinearLayout

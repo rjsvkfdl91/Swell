@@ -9,14 +9,12 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
@@ -24,14 +22,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,7 +39,6 @@ import java.util.Locale;
 public class ManagementActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
     private static final int LOADER_ID = 1;
-    private static final String TAG ="Management" ;
     private TextView mTotalText;
     private long lastBackPressed;
     private SharedPreferences mPreference;
@@ -76,14 +69,14 @@ public class ManagementActivity extends AppCompatActivity implements LoaderManag
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_management);
 
+        //Set currency symbol
         Locale locale = Locale.getDefault();
         Currency currency = Currency.getInstance(locale);
         mCurrencySymbol= currency.getSymbol().replaceAll("\\w", "");
 
         mPreference = getSharedPreferences("item",MODE_PRIVATE);
 
-        mDrawer = (DrawerLayout)findViewById(R.id.drawer_layout);
-        NavigationView mNavigationView = (NavigationView) findViewById(R.id.navigation_view);
+        //Set toolbar
         mToolbar = (Toolbar)findViewById(R.id.toolBar);
         setSupportActionBar(mToolbar);
         ActionBar actionBar = getSupportActionBar();
@@ -91,6 +84,9 @@ public class ManagementActivity extends AppCompatActivity implements LoaderManag
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        //Set navigation drawer
+        mDrawer = (DrawerLayout)findViewById(R.id.drawer_layout);
+        NavigationView mNavigationView = (NavigationView) findViewById(R.id.navigation_view);
         setUpDrawer();
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -173,31 +169,11 @@ public class ManagementActivity extends AppCompatActivity implements LoaderManag
             }
         });
 
+        //Set RecyclerView
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         mCursorItemAdapter = new CursorItemAdapter(this);
         recyclerView.setAdapter(mCursorItemAdapter);
-
-//        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
-//            @Override
-//            public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-//                return false;
-//            }
-//
-//            @Override
-//            public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
-//
-//                int id = (int)viewHolder.itemView.getTag();
-//
-//                String stringId = Integer.toString(id);
-//                Uri uri = SaverContract.SaverEntry.CONTENT_URI;
-//                uri = uri.buildUpon().appendPath(stringId).build();
-//
-//                getContentResolver().delete(uri, null, null);
-//
-//                getLoaderManager().restartLoader(LOADER_ID, null,ManagementActivity.this);
-//            }
-//        }).attachToRecyclerView(recyclerView);
 
         // To hide fab button while scrolling
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
