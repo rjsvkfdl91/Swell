@@ -1,20 +1,20 @@
 # About Swell
 
-Swell started with the idea of "Spend well" to prevent unnecessary spending.
-Most of people use ledger to keep track of their expenditures. 
-The problem is they already spent on something even if it might not be necessary. 
-That is why I wanted to prevent impulsion buying before they spend by setting priorities.
+Swell started with the idea of "Spend well" to prevent unnecessary spending.<br>
+Most of people use ledger to keep track of their expenditures. <br>
+The problem is they already spent on something even if it might not be necessary. <br>
+That is why I wanted to prevent impulsion buying before they spend by setting priorities.<br>
 
-Swell is a budget planner with priority of items and simple design to catch eyes. 
-App Swell lets you save money by giving information about the most or least priority you need to spend. 
-These features help to think your spending habit by keeping track of expenditure. 
-Total on the main screen shows the total amount of all the items automatically when you add item. 
+Swell is a budget planner with priority of items and simple design to catch eyes. <br>
+App Swell lets you save money by giving information about the most or least priority you need to spend. <br>
+These features help to think your spending habit by keeping track of expenditure. <br>
+Total on the main screen shows the total amount of all the items automatically when you add item. <br>
 
-I hope users can minimize unnecessary items by seeing the total amount displayed on the main screen. 
-(Currency symbol will be automatically changed depending on where you live.)
+I hope users can minimize unnecessary items by seeing the total amount displayed on the main screen. <br>
+(Currency symbol will be automatically changed depending on where you live.)<br>
 
-If you have any problems or want to update, please feel free to contact me via email.
-I will try to fix it as fast as I can for your convenience. 
+If you have any problems or want to update, please feel free to contact me via email.<br>
+I will try to fix it as fast as I can for your convenience. <br>
 
 Thank you!
 
