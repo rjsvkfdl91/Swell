@@ -13,8 +13,7 @@ Total on the main screen shows the total amount of all the items automatically w
 I hope users can minimize unnecessary items by seeing the total amount displayed on the main screen. <br>
 (Currency symbol will be automatically changed depending on where you live.)<br>
 
-
-
+<br><br>
 
 
 ### Features of Swell
@@ -28,7 +27,7 @@ I hope users can minimize unnecessary items by seeing the total amount displayed
    • Month will be automatically updated every month.
 
 
-
+<br><br>
 
 
 ## ScreenShots
@@ -36,8 +35,7 @@ I hope users can minimize unnecessary items by seeing the total amount displayed
   
 <img src="start.png" width="150"> <img src="main_content.png" width="150"> <img src="main_content2.png" width="150"> <img src="item_input.png" width="150"> <img src="navigation.png" width="150"> <img src="about.png" width="150">
 
-
-
+<br><br>
 
 
 # License
