@@ -13,11 +13,6 @@ Total on the main screen shows the total amount of all the items automatically w
 I hope users can minimize unnecessary items by seeing the total amount displayed on the main screen. <br>
 (Currency symbol will be automatically changed depending on where you live.)<br>
 
-If you have any problems or want to update, please feel free to contact me via email.<br>
-I will try to fix it as fast as I can for your convenience. <br>
-
-Thank you!
-
 
 Features of Swell
 
