@@ -30,6 +30,12 @@ Features of Swell
 • Month will be automatically updated every month.
 
 
+## ScreenShots
+
+  
+<img src="start.png" width="150"> <img src="main_content.png" width="150"> <img src="main_content2.png" width="150"> <img src="item_input.png" width="150"> <img src="navigation.png" width="150"> <img src="about.png" width="150">
+
+
 # License
 
 The MIT License (MIT)
