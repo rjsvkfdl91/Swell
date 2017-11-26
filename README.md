@@ -33,7 +33,8 @@ I hope users can minimize unnecessary items by seeing the total amount displayed
 ## ScreenShots
 
   
-<img src="start.png" width="150"> <img src="main_content.png" width="150"> <img src="main_content2.png" width="150"> <img src="item_input.png" width="150"> <img src="navigation.png" width="150"> <img src="about.png" width="150">
+<img src="start.png" width="200"> <img src="main_content.png" width="200"> <img src="main_content2.png" width="200"> <br>
+<img src="item_input.png" width="200"> <img src="navigation.png" width="200"> <img src="about.png" width="200">
 
 <br><br>
 
